@@ -1,0 +1,34 @@
+optim:
+  optim_uv_plane:
+    lr: 1e-3
+  optim_offset_mlp:
+    lr: 2e-4
+  optim_rotation_mlp:
+    lr: 1e-3
+  optim_scaling_mlp:
+    lr: 5e-3
+  optim_color_mlp:
+    lr: 5e-3
+  # optim_opacity_mlp:
+  #   lr: 5e-2
+  # optim_mapper:
+  #   lr: 1e-3
+    
+  #optim_smplx:
+  #  lr: 1e-5
+    
+  total_iteration: 5000
+  # save_every_iter: 2000
+    
+  lambda_ssim: 0.2
+  lambda_perceptual: 0.05
+
+  scheduler:
+    milestone: 2000
+    decay: 0.33
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+smplx_model:
+  gender: male-lite
+  num_betas: 10
+  num_expression_coeffs: 10
+  flat_hand_mean: True
+  use_pca: True
+  num_pca_comps: 6
+
+uv_plane:
+  resolution: 512
+  feature_dims: 48
+
+# mlp_config:
+#   otype: VanillaMLP
+#   activation: LeakyReLU  # ReLU, Softmax, LeakyReLU
+#   output_activation: none
+#   n_neurons: 128
+#   n_hidden_layers: 3
+#   res_layers: [2]
+#   zero_init: True
+#   weight_norm: True
+
+mlp_config:
+  geometry:
+    otype: VanillaMLP
+    activation: LeakyReLU  # ReLU, Softmax, LeakyReLU
+    output_activation: none
+    n_neurons: 128
+    n_hidden_layers: 2
+    res_layers: [1]
+    zero_init: True
+    weight_norm: True
+  color:
+    otype: VanillaMLP
+    activation: LeakyReLU  # ReLU, Softmax, LeakyReLU
+    output_activation: none
+    n_neurons: 128
+    n_hidden_layers: 2
+    res_layers: [1]
+    zero_init: True
+    weight_norm: True
+
+
+
+
+
+mapper_config:
+  shape: [1, 4, 64, 64]

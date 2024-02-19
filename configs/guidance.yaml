@@ -1,0 +1,11 @@
+model_path: '/home/yhe/projects/zeyu/weights/huggingface/base_model/stable-diffusion-2-1-base'
+controlnet_model_path: '/home/yhe/projects/zeyu/weights/huggingface/controlnet/ControlNet_Depth'
+fp16: False
+use_controlnet: True
+vram_O: False
+t_range: [0.02, 0.5]
+noise_seed: 0
+timestep_annealing: False
+uncond_scale: False
+guidance_scale: 7.5
+total_iter: 1000

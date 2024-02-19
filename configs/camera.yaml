@@ -1,0 +1,15 @@
+face_ratio: 0.0
+head_radius_range: [1.0, 1.1]
+head_theta_range: [75, 85]
+head_phi_range: [-60, 60]
+theta_range: [60, 90]
+phi_range: [-140, 140]
+radius_range: [4.1, 4.2]
+angle_overhead: 30
+angle_front: 90
+dir_text: True
+jitter_pose: False
+image_h: 512
+image_w: 512
+fovy_range: [0.42, 0.58]
+device: "cuda"
